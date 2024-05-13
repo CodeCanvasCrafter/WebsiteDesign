@@ -1,15 +1,33 @@
-  <!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Learning Software Developer</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storytelling Contest Feedback Form</title>
 </head>
 <body>
-    <h1>This is an audio song</h1>
-     
-    <audio controls src="media/summer.mp3">This is audio </audio> <br>
-    <video controls width="300px"height="300px" src"media/Aqkhan.mp4">This is video </video> 
-
- 
+    <h2>Storytelling Contest Feedback Form</h2>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td><label for="story">Story:</label></td>
+                <td><textarea id="story" name="story" rows="10" cols="50" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="rating">Rating:</label></td>
+                <td>
+                    <select id="rating" name="rating" required>
+                        <option value="" selected disabled>Select Rating</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="below_average">Below Average</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
